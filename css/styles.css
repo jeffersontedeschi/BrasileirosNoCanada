@@ -75,30 +75,37 @@ body {
 }
 
 .nav-links a {
+    color: #2c5282;  /* Azul escuro */
     text-decoration: none;
-    color: var(--color-muted);
-    font-weight: 500;
-    font-size: var(--font-size-sm);
+    padding: 8px 16px;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--color-primary);
+    background-color: #4299e1;  /* Azul mais claro */
+    color: white;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--color-primary);
-    transition: width 0.3s ease;
+.nav-links a.active {
+    background-color: #2b6cb0;  /* Azul médio */
+    color: white;
 }
 
-.nav-links a:hover::after {
-    width: 100%;
+/* Link desabilitado com nova cor */
+.nav-links a.disabled {
+    color: #a0aec0;  /* Cinza azulado */
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav-links a.disabled:hover {
+    color: #a0aec0;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .hamburger {
@@ -1155,4 +1162,129 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-main);
     font-weight: 700;
     letter-spacing: 0.01em;
+}
+
+/* Estilos para a página de Educação e Trabalho */
+.education-work-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-work-section h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-container h2 {
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.info-container h3 {
+    color: #2c3e50;
+    margin: 1.5rem 0 1rem;
+}
+
+.info-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-container ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-container ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.education-info, .work-info {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para a página de Colleges */
+.colleges-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.colleges-section h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.colleges-section .info-container h3 {
+    color: #3498db;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2em;
+}
+
+.colleges-section .info-container ul,
+.colleges-section .info-container ol {
+    margin-left: 1.5rem;
+}
+
+.colleges-section .info-container a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.colleges-section .info-container a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Estilos para a página de Universidades */
+.universities-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.universities-section h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.universities-section .info-container h3 {
+    color: #2b6cb0;  /* Usando o mesmo azul do menu */
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2em;
+}
+
+.universities-section .info-container ul,
+.universities-section .info-container ol {
+    margin-left: 1.5rem;
+}
+
+.universities-section .info-container a {
+    color: #2c5282;  /* Azul escuro do menu */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.universities-section .info-container a:hover {
+    color: #4299e1;  /* Azul mais claro do menu */
+    text-decoration: underline;
 }
