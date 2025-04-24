@@ -5,3 +5,6 @@ dist/
 .env.local
 .cache/
 .netlify/
+
+# Large files
+*.exe
