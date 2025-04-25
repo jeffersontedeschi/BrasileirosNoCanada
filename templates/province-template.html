@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel em {{provinceName}} | Seu Guia Brasileiro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html">Brasileiros no Canadá</a></div>
+        <ul class="nav-links">
+            <li><a href="imigracao.html">Imigração</a></li>
+            <li><a href="moradia.html">Moradia</a></li>
+            <li><a href="trabalho.html">Trabalho</a></li>
+            <li><a href="educacao.html">Educação</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="province-details">
+        <h1 class="main-title">Aluguel em {{provinceName}}</h1>
+        
+        <p id="last-updated" class="last-updated">Última atualização: Carregando...</p>
+        
+        <section class="intro">
+            <p>{{introText}}</p>
+        </section>
+
+        <section class="rental-costs">
+            <!-- Table will be dynamically generated here -->
+        </section>
+
+        <section class="tenant-rights">
+            <h2>Direitos e Deveres do Inquilino em {{provinceName}}</h2>
+            <p>{{tenantRightsText}}</p>
+        </section>
+
+        <section class="property-types">
+            <h2>Tipos de Imóveis para Alugar</h2>
+            <p>{{propertyTypesText}}</p>
+        </section>
+
+        <section class="search-tips">
+            <h2>Onde Procurar Imóveis</h2>
+            <p>{{searchTipsText}}</p>
+        </section>
+
+        <section class="province-tips">
+            <h2>Dicas Específicas para {{provinceName}}</h2>
+            <p>{{provinceTipsText}}</p>
+        </section>
+
+        <div class="back-link">
+            <a href="aluguel.html">← Voltar para o Guia de Aluguel no Canadá</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="language-switcher">
+                <span>Idioma:</span>
+                <a href="?lang=pt" class="active">Português</a>
+                <a href="?lang=en">English</a>
+                <a href="?lang=es">Español</a>
+            </div>
+
+            <p>© 2024 Brasileiros no Canadá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/rental-data.js"></script>
+    <script src="../js/province-content.js"></script>
+</body>
+</html> 
